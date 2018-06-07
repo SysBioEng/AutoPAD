@@ -15,7 +15,7 @@ function model=autoPAD(model,pHset,pHzero, pKa,modelName,reportFormat,directionB
 %model          COBRA model structure. Requires vectors metFormula and
 %               metCharges. vector comps is desired
 %pHset          list of pH values to set for each compartment [cx1]
-%pHstart        list of the current pH values for each compartment [cx1] 
+%pHzero        list of the current pH values for each compartment [cx1] 
 %pKa            numeric array. Contains row-wise all the pKa related to the
 %               metabolites in the model. Each row correspond to a metabolite
 %

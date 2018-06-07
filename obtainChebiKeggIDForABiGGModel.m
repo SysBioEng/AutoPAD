@@ -42,7 +42,7 @@ kegg=cell(length(model.mets),1);
 chebi=cell(length(model.mets),1);
 charges=NaN(length(model.mets),1);
 for i=1:length(model.mets)
-    %
+%
     pos=strfind(model.mets(i),'_');
     pos=pos{1}(end);
     met=substring(model.mets{i},1,pos-1);
@@ -67,7 +67,7 @@ if not(isfield(model,'metCharges'))
     model.metCharges=charges;
 end
 
-
+eval([modelName, ' =  model']);
 save(archiveName,modelName);
 end
 
